@@ -1,13 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Be My Valentine</title>
-    <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Be My Valentine</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/utils.css">
   </head>
+
   <body>
-	<script src="index.js"></script>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <h1 class="mt-4 spacer-text">
+              .
+            </h1>
+          </div>
+        </div>
+
+          <div class="row justify-content-center">
+              <div class="col text-center m-5">
+                  <img src="../pictures/cat-hold-gun.gif" class="img-fluid">
+              </div>
+          </div>
+
+          <div class="row justify-content-center">
+              <div class="col text-center">
+                  <h2>
+                    ...
+                  </h2>
+              </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col text-center">
+                <a class="btn btn-rounded btn-custom m-2" href="ayy-les-go.html" role="button">yes</a>
+                <a class="btn btn-rounded btn-custom m-2 movingButton" id="movingButton" onclick="buttonClicked()" onmouseenter="moveButton()" href="#" role="button">no</a>
+            </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../scripts/backgroud-generator.js"></script>
+      <script>
+        function moveButton() {
+          var button = document.getElementById("movingButton");
+    
+          // Calculate random positions
+          var randomX = Math.floor(Math.random() * (window.innerWidth));
+          var randomY = Math.floor(Math.random() * (window.innerHeight));
+    
+          // Apply new positions - sorry if u can see this lol
+          // some absolutely beautful code ikr
+          if (randomX > window.innerWidth/2){
+            if (randomY > window.innerHeight/2){
+              button.style.transform = `translate(${-randomX/2}px, ${-randomY/2}px`;
+            } else {
+              button.style.transform = `translate(${-randomX/2}px, ${randomY/2}px`;
+            }
+          } else {
+            if (randomY > window.innerHeight/2){
+              button.style.transform = `translate(${randomX/2}px, ${-randomY/2}px`;
+            } else {
+              button.style.transform = `translate(${randomX/2}px, ${randomY/2}px`;
+            }
+          }
+        }
+
+        function resetStyle() {          
+          var button = document.getElementById("movingButton");
+          setTimeout(function() {
+            button.style.backgroundColor = "#f542d1";
+            button.style.borderColor = "#fff";
+            button.style.color = "#fff";
+          }, 300);
+        }
+
+        function buttonClicked() {
+          moveButton()
+          resetStyle()
+        }
+      </script>
   </body>
+
 </html>
