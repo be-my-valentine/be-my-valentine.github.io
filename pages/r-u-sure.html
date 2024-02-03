@@ -95,6 +95,18 @@
           });
         }
 
+        function trackButtonHover() {
+          gtag('event', 'button_hover', {
+            'event_category': 'Button',
+            'event_label': 'No button hover',
+          });
+        }
+
+        function buttonEntered() {
+          trackButtonHover()
+          moveButton()
+        }
+
         function buttonClicked() {
           trackButtonClick()
           moveButton()
