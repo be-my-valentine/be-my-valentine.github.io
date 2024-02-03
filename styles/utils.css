@@ -14,20 +14,3 @@ div {
     border: 1px solid black;
 }
 
-.centre-align {
-    width:100%;
-    display: flex;
-    justify-content: center;
-}
-
-.text {
-    justify-content: center;
-    display: flex;
-
-}
-
-.image {
-    justify-content: center;
-    display: flex;
-
-}
