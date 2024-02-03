@@ -6,17 +6,17 @@
 }
 
 :root {
-    --custom-primary-color: #f542d1;
-    --custom-background-color: #fff4c9
+  --custom-primary-color: #f542d1;
+  --custom-background-color: #fff4c9
   }
 
 body {
-    background-color: var(--custom-background-color);
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: #f542d1;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  background-color: var(--custom-background-color);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #f542d1;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 img {
@@ -25,24 +25,24 @@ img {
 }
 
 .emoji-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
   }
 
 .btn-custom {
-    background-color: #f542d1;
-    border-color: #fff;
-    color: #fff;
-    width: 70px;
+  background-color: #f542d1;
+  border-color: #fff;
+  color: #fff;
+  width: 70px;
 }
 
 .movingButton {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .spacer-text{
