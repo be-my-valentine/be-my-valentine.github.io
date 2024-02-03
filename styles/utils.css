@@ -5,12 +5,19 @@
 	margin: 0;
 }
 
+:root {
+    --custom-primary-color: #f542d1;
+    --custom-secondary-color: #fff
+  }
+
 body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: #f542d1
 }
 
-div {
-    border: 1px solid black;
+.btn-custom {
+    background-color: #f542d1;
+    border-color: #fff;
+    color: #fff;
+    width: 70px;
 }
-
